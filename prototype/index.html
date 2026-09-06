@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Seguro IN | Seguros para você, sua profissão e sua empresa</title>
+  <meta name="description" content="Escolha o seguro que precisa e comece sua cotação com a Seguro IN. Proteção para pessoas, profissionais e empresas.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <noscript><div class="noscript-notice">Ative o JavaScript para experimentar a cotação demonstrativa.</div></noscript>
+
+  <a href="#inicio" class="skip-link">Pular para o conteúdo</a>
+
+  <div class="demo-banner" role="note">Protótipo demonstrativo. Use dados fictícios.</div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#inicio" class="brand" aria-label="Seguro IN — início">
+        <img src="assets/img/brand-mark.svg" alt="" class="brand__mark" width="40" height="40">
+        <span class="brand__text">seguro <span class="brand__text-in">IN</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul class="site-nav__links">
+          <li><a href="#seguros">Seguros</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+        <button type="button" class="btn btn--primary btn--header-full" data-action="open-quote" data-entry-point="header">Começar cotação</button>
+        <button type="button" class="btn btn--primary btn--header-compact" data-action="open-quote" data-entry-point="header">Cotar</button>
+        <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu">Menu</button>
+      </nav>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Menu móvel">
+      <ul class="mobile-nav__links">
+        <li><a href="#seguros">Seguros</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Abertura -->
+    <section id="inicio" class="section section--canvas hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content min-width-0">
+            <h1>Seguro para você, sua profissão e sua empresa.</h1>
+            <p>Escolha o que quer proteger e comece sua cotação. A Seguro IN ajuda você a entender as opções.</p>
+
+            <div class="field">
+              <label for="hero-product">O que você quer proteger?</label>
+              <select id="hero-product" name="hero-product">
+                <option value="">Selecione um seguro</option>
+              </select>
+            </div>
+
+            <div class="btn-group">
+              <button type="button" id="hero-primary" class="btn btn--primary" data-action="open-quote" data-entry-point="hero">Começar cotação</button>
+              <button type="button" class="btn btn--ghost" data-action="open-contact" data-entry-point="hero">Prefiro falar com um corretor</button>
+            </div>
+            <p class="hero__support">Primeiro, pedimos um contato. Depois, você segue para cotação ou atendimento, conforme o seguro.</p>
+          </div>
+          <div class="hero__visual">
+            <img src="assets/img/hero-protection.svg" alt="" class="hero__art" width="560" height="460">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="seguros" class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>O que você quer proteger?</h2>
+          <p class="section__support">Encontre seu seguro ou conte com a ajuda de um corretor para escolher.</p>
+        </div>
+
+        <div class="tabs">
+          <div id="catalog-tabs" role="tablist" aria-label="Grupos de seguros" class="tabs__list">
+            <button role="tab" class="tabs__tab" id="tab-personal" aria-selected="true" aria-controls="panel-personal" tabindex="0">Para você</button>
+            <button role="tab" class="tabs__tab" id="tab-professional" aria-selected="false" aria-controls="panel-professional" tabindex="-1">Sua profissão</button>
+            <button role="tab" class="tabs__tab" id="tab-business" aria-selected="false" aria-controls="panel-business" tabindex="-1">Sua empresa</button>
+          </div>
+
+          <!-- Para você -->
+          <div role="tabpanel" id="panel-personal" aria-labelledby="tab-personal" class="tabs__panel is-active">
+            <ul class="catalog-list catalog-grid catalog-grid--2col">
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M4 18h20M6 18l2-8h12l2 8M8 10l2-4h8l2 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="18" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="19" cy="18" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Automóvel</h3>
+                  <p class="catalog-item__desc">Encontre opções para proteger seu carro e seguir com mais tranquilidade.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="auto" data-entry-point="catalog">Começar cotação</button>
+              </li>
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M4 14l10-8 10 8v10H4V14z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><rect x="11" y="17" width="6" height="7" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Residencial</h3>
+                  <p class="catalog-item__desc">Proteção para sua casa, seus bens e os imprevistos da rotina.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="residencial" data-entry-point="catalog">Começar cotação</button>
+              </li>
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M6 24c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Vida</h3>
+                  <p class="catalog-item__desc">Planeje proteção financeira para você e para quem conta com você.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="vida" data-entry-point="catalog">Começar cotação</button>
+              </li>
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="10" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="20" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M7 18h3M18 18h3M10 10h8l2 8H8l2-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Moto</h3>
+                  <p class="catalog-item__desc">Escolha uma proteção que acompanhe você sobre duas rodas.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="moto" data-entry-point="catalog">Começar cotação</button>
+              </li>
+            </ul>
+
+            <div id="catalog-extra" class="catalog-extra">
+              <ul class="catalog-list catalog-grid catalog-grid--2col">
+                <li class="catalog-item">
+                  <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="8" y="6" width="12" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h12M14 6v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  <div>
+                    <h3 class="catalog-item__title">Viagem</h3>
+                    <p class="catalog-item__desc">Considere proteção para imprevistos antes de fazer as malas.</p>
+                  </div>
+                  <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="viagem" data-entry-point="catalog">Começar cotação</button>
+                </li>
+                <li class="catalog-item">
+                  <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="9" y="4" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/><circle cx="14" cy="20" r="1" fill="currentColor"/></svg>
+                  <div>
+                    <h3 class="catalog-item__title">Celular</h3>
+                    <p class="catalog-item__desc">Conheça opções de proteção para um item presente no seu dia a dia.</p>
+                  </div>
+                  <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="celular" data-entry-point="catalog">Começar cotação</button>
+                </li>
+                <li class="catalog-item">
+                  <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="8" cy="20" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h4l2-10h4l2 10h-4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                  <div>
+                    <h3 class="catalog-item__title">Bike</h3>
+                    <p class="catalog-item__desc">Encontre opções para proteger sua bicicleta.</p>
+                  </div>
+                  <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="bike" data-entry-point="catalog">Começar cotação</button>
+                </li>
+                <li class="catalog-item">
+                  <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M6 16h16M8 16V10a6 6 0 0112 0v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="20" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+                  <div>
+                    <h3 class="catalog-item__title">Roubo e furto</h3>
+                    <p class="catalog-item__desc">Conheça essa alternativa de proteção para seu veículo.</p>
+                  </div>
+                  <button type="button" class="btn btn--secondary" data-action="open-quote" data-product-id="roubo-furto" data-entry-point="catalog">Começar cotação</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="catalog-expand">
+              <button type="button" id="expand-catalog" class="btn btn--ghost" aria-expanded="false" aria-controls="catalog-extra">Ver mais seguros</button>
+            </div>
+          </div>
+
+          <!-- Sua profissão -->
+          <div role="tabpanel" id="panel-professional" aria-labelledby="tab-professional" class="tabs__panel" hidden>
+            <div class="rc-panel">
+              <h3 class="rc-panel__title">Responsabilidade civil profissional</h3>
+              <p class="rc-panel__desc">Converse sobre os riscos da sua atividade e as opções de proteção.</p>
+              <div class="rc-activities" role="group" aria-label="Atividades profissionais">
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="advocacia" data-entry-point="catalog">Advocacia</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="contabilidade" data-entry-point="catalog">Contabilidade</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="corretagem-imoveis" data-entry-point="catalog">Corretagem de imóveis</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="odontologia" data-entry-point="catalog">Odontologia</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="engenharia-arquitetura" data-entry-point="catalog">Engenharia e arquitetura</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="medicina" data-entry-point="catalog">Medicina</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="corretagem-seguros" data-entry-point="catalog">Corretagem de seguros</button>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="rc-profissional" data-activity-id="outra-profissao" data-entry-point="catalog">Outra profissão</button>
+              </div>
+              <button type="button" class="btn btn--primary" data-action="open-assistance" data-product-id="rc-profissional" data-entry-point="catalog">Conversar sobre RC profissional</button>
+            </div>
+          </div>
+
+          <!-- Sua empresa -->
+          <div role="tabpanel" id="panel-business" aria-labelledby="tab-business" class="tabs__panel" hidden>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="6" y="8" width="16" height="16" stroke="currentColor" stroke-width="1.8"/><path d="M10 8V6a4 4 0 018 0v2M10 14h2M16 14h2M10 18h2M16 18h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Patrimônio empresarial</h3>
+                  <p class="catalog-item__desc">Avalie a proteção dos bens e das instalações da sua empresa.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="patrimonial-empresarial" data-entry-point="catalog">Falar com um corretor</button>
+              </li>
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="4" y="10" width="20" height="14" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V6h12v4M8 16h4M16 16h4M8 20h4M16 20h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Riscos corporativos</h3>
+                  <p class="catalog-item__desc">Conte com orientação para necessidades de proteção mais complexas.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="riscos-corporativos" data-entry-point="catalog">Falar com um corretor</button>
+              </li>
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="4" y="6" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 12h20M10 18h2M16 18h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Riscos cibernéticos</h3>
+                  <p class="catalog-item__desc">Avalie riscos digitais e opções de proteção para o seu negócio.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="cyber" data-entry-point="catalog">Falar com um corretor</button>
+              </li>
+              <li class="catalog-item">
+                <svg class="catalog-item__icon" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="4" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 14h20M10 8V6M18 8V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div>
+                  <h3 class="catalog-item__title">Eventos</h3>
+                  <p class="catalog-item__desc">Converse sobre as necessidades de proteção do seu evento.</p>
+                </div>
+                <button type="button" class="btn btn--secondary" data-action="open-assistance" data-product-id="eventos" data-entry-point="catalog">Falar com um corretor</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo -->
+    <section id="como-funciona" class="section section--canvas">
+      <div class="container">
+        <div class="section__header">
+          <h2>Da escolha ao próximo passo.</h2>
+        </div>
+        <ol class="process-list">
+          <li>
+            <h3>Escolha seu seguro</h3>
+            <p>Conte o que você quer proteger.</p>
+          </li>
+          <li>
+            <h3>Deixe seu contato</h3>
+            <p>Informe como podemos ajudar com sua solicitação.</p>
+          </li>
+          <li>
+            <h3>Continue com orientação</h3>
+            <p>Siga para a cotação online ou converse com um corretor, conforme o produto.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Institucional -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Uma corretora para orientar sua escolha.</h2>
+        </div>
+        <p>A Seguro IN atende pessoas, profissionais e empresas. Sua atuação inclui proteção patrimonial, responsabilidade civil e riscos corporativos e cibernéticos, com atendimento para entender cada necessidade.</p>
+        <ul class="trust-list">
+          <li>
+            <h3>Atendimento humano</h3>
+            <p>Converse com um corretor sobre suas dúvidas.</p>
+          </li>
+          <li>
+            <h3>Necessidades diferentes</h3>
+            <p>Opções para a vida pessoal, a atividade profissional e o negócio.</p>
+          </li>
+          <li>
+            <h3>Contato acessível</h3>
+            <p>Canais de contato reunidos em um só lugar.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Dúvidas -->
+    <section id="duvidas" class="section section--canvas">
+      <div class="container">
+        <div class="section__header">
+          <h2>Dúvidas frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Preciso saber qual seguro escolher?</summary>
+            <p>Não. Se estiver em dúvida, escolha falar com um corretor e conte o que você precisa proteger.</p>
+          </details>
+          <details>
+            <summary>Por que vocês pedem meu contato?</summary>
+            <p>Para relacionar sua solicitação ao seguro escolhido e permitir que a equipe ajude com a cotação.</p>
+          </details>
+          <details>
+            <summary>Vou continuar neste site?</summary>
+            <p>Depende do produto. Algumas cotações seguem em outro ambiente; outras precisam de uma conversa com um corretor. Você verá o próximo passo antes de continuar.</p>
+          </details>
+          <details>
+            <summary>Pedir uma cotação significa contratar?</summary>
+            <p>Não. A solicitação inicia uma análise ou cotação. As condições e os próximos passos precisam ser apresentados antes da contratação.</p>
+          </details>
+          <details>
+            <summary>Vocês atendem profissionais e empresas?</summary>
+            <p>Sim. Acesse os grupos de profissão e empresa para encontrar as opções e solicitar orientação.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fechamento -->
+    <section id="contato" class="section section--ink">
+      <div class="container">
+        <h2>Vamos encontrar seu próximo passo?</h2>
+        <p class="text-muted">Escolha um seguro ou fale com um corretor para começar.</p>
+        <div class="btn-group">
+          <button type="button" class="btn btn--on-ink" data-action="open-quote" data-entry-point="footer">Começar cotação</button>
+          <button type="button" class="btn btn--secondary btn--light" data-action="open-contact" data-entry-point="footer">Falar com um corretor</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="assets/img/brand-mark-light.svg" alt="" class="footer__brand-mark" width="36" height="36">
+            <span class="brand__text" style="color:#fff">seguro <span class="brand__text-in" style="color:var(--color-aqua)">IN</span></span>
+          </div>
+          <p class="text-small" style="color:rgba(255,255,255,0.75);margin-top:12px">INFINNITY CORRETORA E ADM. DE SEGUROS LTDA.</p>
+        </div>
+        <div>
+          <p class="text-small"><strong>Telefone / WhatsApp:</strong> (11) 97658-4982</p>
+          <p class="text-small"><strong>E-mail:</strong> <a href="mailto:contato@seguroin.com.br">contato@seguroin.com.br</a></p>
+          <p class="text-small"><strong>Endereço:</strong> Avenida Tiradentes, 368, Centro, Guarulhos — SP</p>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p><button type="button" class="btn btn--ghost" style="color:var(--color-aqua);padding:0;min-height:44px" data-action="open-privacy">Privacidade do protótipo</button></p>
+        <p>Demonstração local. Nenhum dado é enviado ou armazenado permanentemente.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dialog de captação -->
+  <dialog id="lead-dialog" class="lead-dialog" aria-labelledby="dialog-title">
+    <div class="lead-dialog__inner">
+      <div class="lead-dialog__header">
+        <h2 id="dialog-title" class="lead-dialog__title">Comece sua cotação.</h2>
+        <button type="button" id="dialog-close" class="lead-dialog__close" aria-label="Fechar">×</button>
+      </div>
+      <div class="lead-dialog__body">
+        <div id="dialog-live" aria-live="polite" class="visually-hidden"></div>
+
+        <div id="form-view">
+          <!-- Estado: editing -->
+          <div class="dialog-state is-active" data-state="editing">
+            <p id="dialog-support" class="lead-dialog__support">Deixe um contato antes de seguir para o ambiente de cotação.</p>
+            <form id="lead-form" novalidate>
+              <div id="product-field" class="field">
+                <label id="product-label" for="field-product">Seguro</label>
+                <select id="field-product" name="product" aria-describedby="error-product"></select>
+                <div id="error-product" class="field__error" role="alert"></div>
+              </div>
+              <div id="activity-field" class="field" hidden>
+                <label for="field-activity">Atividade profissional</label>
+                <select id="field-activity" name="activity" aria-describedby="error-activity"></select>
+                <div id="error-activity" class="field__error" role="alert"></div>
+              </div>
+              <div class="field">
+                <label for="field-name">Seu nome</label>
+                <input type="text" id="field-name" name="name" autocomplete="name" aria-describedby="error-name">
+                <div id="error-name" class="field__error" role="alert"></div>
+              </div>
+              <div class="field">
+                <label for="field-phone">WhatsApp com DDD</label>
+                <input type="tel" id="field-phone" name="phone" inputmode="tel" autocomplete="tel" aria-describedby="error-phone">
+                <div id="error-phone" class="field__error" role="alert"></div>
+              </div>
+              <div class="field">
+                <label for="field-email">E-mail (opcional)</label>
+                <input type="email" id="field-email" name="email" autocomplete="email" aria-describedby="error-email">
+                <div id="error-email" class="field__error" role="alert"></div>
+              </div>
+              <div class="field field--checkbox">
+                <input type="checkbox" id="field-permission" name="permission" aria-describedby="error-permission">
+                <label for="field-permission">Pode me contatar sobre esta solicitação.</label>
+              </div>
+              <div id="error-permission" class="field__error" role="alert"></div>
+
+              <button type="submit" id="submit-btn" class="btn btn--primary">Continuar</button>
+              <p class="lead-dialog__notice">Protótipo: use dados fictícios. Nenhuma solicitação será enviada.</p>
+
+              <div id="privacy-expand" class="privacy-expand">
+                <button type="button" id="privacy-toggle" class="btn btn--ghost">Como seus dados seriam usados?</button>
+                <div class="privacy-expand__content">
+                  Esta é uma demonstração. Os dados preenchidos ficam apenas na memória desta página e não são enviados à Seguro IN ou a seguradoras. Na versão publicada, o aviso deverá explicar como os dados serão usados para atender à solicitação e como entrar em contato sobre privacidade.
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Estado: submitting -->
+          <div class="dialog-state" data-state="submitting">
+            <p class="lead-dialog__support"><span class="spinner" aria-hidden="true"></span>Preparando próxima etapa…</p>
+          </div>
+
+          <!-- Estado: success -->
+          <div class="dialog-state" data-state="success">
+            <h3 id="success-title" class="dialog-success__title">Continue sua cotação.</h3>
+            <p id="success-text">Na próxima etapa, você informará os dados específicos do seguro escolhido.</p>
+            <span id="success-notice" class="dialog-success__notice">Fluxo demonstrativo. Nenhum dado foi enviado.</span>
+            <div class="btn-group" style="margin-top:24px">
+              <a id="success-link" href="#" class="btn btn--primary" data-action="next-step">Continuar para cotação</a>
+              <button type="button" class="btn btn--ghost" data-action="edit-form">Alterar informações</button>
+            </div>
+          </div>
+
+          <!-- Estado: error -->
+          <div class="dialog-state" data-state="error">
+            <p class="dialog-error">Não foi possível continuar. Seus dados permanecem no formulário. Tente novamente.</p>
+            <button type="button" class="btn btn--primary" data-action="retry-submit" style="margin-top:16px">Tentar novamente</button>
+          </div>
+        </div>
+
+        <!-- Visualização privacidade -->
+        <div id="privacy-only-view" hidden>
+          <p>Esta é uma demonstração. Os dados preenchidos ficam apenas na memória desta página e não são enviados à Seguro IN ou a seguradoras. Na versão publicada, o aviso deverá explicar como os dados serão usados para atender à solicitação e como entrar em contato sobre privacidade.</p>
+          <button type="button" id="privacy-close" class="btn btn--primary" style="margin-top:24px">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/catalog.js" defer></script>
+  <script src="assets/js/lead-adapter.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
